@@ -1,5 +1,5 @@
 
-// select img elements  
+// img element selected  
 function configureListeners() {
     let images = document.getElementsByTagName("img") 
     
@@ -91,6 +91,5 @@ function getProductInfo(paintColor) {
         
         let color = document.getElementById('color-name');
         color.textContent = colorName;
-    }
-    
+    }    
 }
