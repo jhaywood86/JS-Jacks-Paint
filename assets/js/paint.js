@@ -1,7 +1,7 @@
 
 // select img elements  
 function configureListeners() {
-    let images = document.getElementById("img") 
+    let images = document.getElementsByTagName("img") 
     
 
  // using for loop to add event listeners      
@@ -12,11 +12,16 @@ function configureListeners() {
 }
 
 function addOpacity(event) {
-    // add appropriate CSS class
+    if(this.classList.contains('dim')){
+        this.classList.add('dim')
+    }
     getProductInfo(event.target.id);     
 }
 
 function removeOpacity(event) {
+    if(this.classList.contains('dim')){
+        this.classList.remove('dim');
+    }
      //remove appropriate CSS class
 
     let element = document.getElementById('color-price');
